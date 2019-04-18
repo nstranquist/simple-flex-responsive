@@ -1,18 +1,24 @@
 /* variables */
 :root {
-    --main-color-white: white;
-    --main-color-black: black;
-    --main-color-turquoise: turquoise;
+    --color-white: white;
+    --color-black: black;
+    --color-turquoise: turquoise;
 }
-
+html {
+    box-sizing: border-box;
+}
 /* Page styles */
-* {
+*. *:before, *:after {
+    box-sizing: inherit;
+}
+body {
     padding: 0;
     margin: 0;
+    line-height: 1.5;
+    background-color: black;
 }
 .wrapper {
     height: 100vh;
-    background: black;
     display: flex;
     flex-direction: column;
 }
@@ -21,16 +27,23 @@
 }
 a, a:hover, a:visited {
     text-decoration: none;
-    color: var(--main-color-black);
+    color: var(--color-black);
 }
 .nav-list {
     list-style-type: none;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .nav-list li {
-    padding: 10px 5px;
+    padding: 10px 1.5rem;
     margin: 0;
+    border-radius: .5rem;
+}
+.nav-list li:hover {
+    background-color: silver;
+    border-bottom: 1px solid silver;
+    transition: .5s ease;
 }
 .nav-list a {
     cursor: pointer;
@@ -38,24 +51,27 @@ a, a:hover, a:visited {
 
 /* Nav styles */
 .nav-section {
+    display: flex;
+    justify-content: space-between;
     background: lightblue;
     min-height: 50px;
-    display: flex;
-    justify-content: space-around; /*space-between*/
-    padding-top: 20px;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 .logo {
     font-size: 2rem;
 }
 .btn-signin {
     padding: 5px 10px;
-    color: var(--main-color-turquoise);
+    align-self: center;
+    color: var(--color-black);
     background-color: transparent;
-    border: 1px solid var(--main-color-turquoise);
+    border: 1px solid silver;
+    border-radius: 5px;
 }
 .btn-signin:hover {
     color: var(--main-color-white);
-    background-color: var(--main-color-turquoise);
+    background-color: var(--color-turquoise);
 }
 
 /* Main styles */
@@ -87,8 +103,22 @@ a, a:hover, a:visited {
 
 /* Footer styles */
 .footer-section {
-    background: lightgoldenrodyellow;
+    background-color: lightgoldenrodyellow;
     min-height: 75px;
+}
+.social-list {
     display: flex;
-    justify-content: space-evenly;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    padding-top: 1rem;
+    margin: 0;
+}
+.social-list li { padding: 5px 10px;}
+.footer-credit {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    border-top: 1px solid silver;
 }
