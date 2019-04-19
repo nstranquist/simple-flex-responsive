@@ -2,28 +2,26 @@
 :root {
     --color-white: white;
     --color-black: black;
+    --color-highlight: gray;
     --color-turquoise: turquoise;
 }
 html {
     box-sizing: border-box;
 }
 /* Page styles */
-*. *:before, *:after {
+*, *:before, *:after {
     box-sizing: inherit;
 }
 body {
     padding: 0;
     margin: 0;
     line-height: 1.5;
-    background-color: black;
-}
-.wrapper {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
+    font-family: sans-serif;
+    background-color: var(--color-highlight);
 }
 .container {
-    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
 }
 a, a:hover, a:visited {
     text-decoration: none;
@@ -57,7 +55,6 @@ a, a:hover, a:visited {
 @media only screen and (max-width: 650px) {
     .left-panel { display: none; }
     .right-panel { display: none; }
-
 }
 
 /* Content styles */
@@ -65,25 +62,8 @@ a, a:hover, a:visited {
     background: lightsalmon;
     min-height: 200px;
 }
-
-/* Footer styles */
+/* Footer section */
 .footer-section {
     background-color: lightgoldenrodyellow;
     min-height: 75px;
-}
-.social-list {
-    display: flex;
-    list-style-type: none;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    padding-top: 1rem;
-    margin: 0;
-}
-.social-list li { padding: 5px 10px;}
-.footer-credit {
-    margin-top: 2rem;
-    margin-bottom: 5rem;
-    text-align: center;
-    border-top: 1px solid silver;
-}
+} /* rest of styles in footer.css*/
