@@ -2,7 +2,7 @@
 .footer-section {
     background-color: lightgoldenrodyellow;
     min-height: 75px;
-    
+
 }
 .social-list {
     display: flex;
@@ -15,8 +15,9 @@
 }
 .social-list li { padding: 5px 10px;}
 .footer-credit {
-    margin-top: 2rem;
-    margin-bottom: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    padding-top: 2rem;
     text-align: center;
     border-top: 1px solid silver;
 }
