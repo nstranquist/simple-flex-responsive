@@ -1,4 +1,4 @@
-# Simple-Flex-Layout Project
+# Simple-Flex-Responsive Project
 ### A Responsive, Re-Usable Layout Template Using CSS Flexbox
 
 ## Goal:
